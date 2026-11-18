@@ -99,31 +99,45 @@ const PERFUMES: Product[] = [
   },
 ];
 
-/* ---------------- Inspired-by collection: GH₵250 each (no photos yet: drawn bottle shown) ---------------- */
-const inspired = (id: string, name: string, inspiredBy: string, forWho: ForId[], vibe: VibeId): Product => ({
+/* ---------------- Inspired-by collection: GH₵250 each ----------------
+ * Photos live in /public/img/products/inspired-<id>.webp (made by scripts/optimize-images.py).
+ * Items without a photo yet (photo: false) show a drawn bottle instead. */
+const inspired = (
+  id: string,
+  name: string,
+  inspiredBy: string,
+  forWho: ForId[],
+  vibe: VibeId,
+  extra: { photo?: boolean; size?: string; line?: string } = {}
+): Product => ({
   id: `inspired-${id}`,
   name,
-  line: 'Inspired collection',
+  line: extra.line ?? 'Inspired collection',
   category: 'inspired',
   for: forWho,
   vibe,
+  size: extra.size,
   price: 250,
   notes: `Inspired by ${inspiredBy}`,
   description: `Our take on ${inspiredBy}. Message us if you’d like to know more about how it wears.`,
+  img: extra.photo === false ? undefined : `${P}inspired-${id}.webp`,
 });
 
+const GLORIA = { line: 'Gloria Perfume', size: '55ml · Eau de parfum' };
+
 const INSPIRED: Product[] = [
-  inspired('texas', 'Texas', 'Bleu de Chanel', ['him'], 'fresh'),
-  inspired('ares', 'Ares', 'Dior Sauvage', ['him'], 'fresh'),
-  inspired('stronger-intensely', 'Stronger Intensely', 'Stronger With You Intensely', ['him'], 'sweet'),
-  inspired('spicebomb', 'Spicebomb', 'Spicebomb', ['him'], 'woody'),
-  inspired('champion', 'Champion', 'Invictus Elixir', ['him'], 'sweet'),
-  inspired('stronger', 'Stronger', 'Stronger With You', ['him'], 'sweet'),
-  inspired('badboy', 'Badboy', 'Carolina Herrera Bad Boy', ['him'], 'woody'),
-  inspired('richi-rich', 'Richi Rich', 'Paco Rabanne 1 Million', ['him'], 'sweet'),
-  inspired('heroes-energy', 'Heroes Energy', 'Versace Eros Energy', ['him'], 'fresh'),
-  inspired('jpg', 'JPG', 'Jean Paul Gaultier Le Male', ['him'], 'sweet'),
-  inspired('nomade', 'Nomade', 'Louis Vuitton Ombre Nomade', ['unisex'], 'woody'),
+  inspired('texas', 'Texas', 'Bleu de Chanel', ['him'], 'fresh', GLORIA),
+  inspired('ares', 'Ares', 'Dior Sauvage', ['him'], 'fresh', GLORIA),
+  inspired('stronger-intensely', 'Stronger Intensely', 'Stronger With You Intensely', ['him'], 'sweet', GLORIA),
+  inspired('spicebomb', 'Spicebomb', 'Spicebomb', ['him'], 'woody', GLORIA),
+  inspired('champion', 'Champion', 'Invictus Elixir', ['him'], 'sweet', GLORIA),
+  inspired('stronger', 'Stronger', 'Stronger With You', ['him'], 'sweet', GLORIA),
+  inspired('badboy', 'Badboy', 'Carolina Herrera Bad Boy', ['him'], 'woody', GLORIA),
+  // No photos sent yet for these three: drawn bottle shown. Add the photo, then delete `photo: false`.
+  inspired('richi-rich', 'Richi Rich', 'Paco Rabanne 1 Million', ['him'], 'sweet', { photo: false }),
+  inspired('heroes-energy', 'Heroes Energy', 'Versace Eros Energy', ['him'], 'fresh', { photo: false }),
+  inspired('jpg', 'JPG', 'Jean Paul Gaultier Le Male', ['him'], 'sweet', { photo: false }),
+  inspired('nomade', 'Nomade', 'Louis Vuitton Ombre Nomade', ['unisex'], 'woody', { line: 'Lorinna Paris', size: '50ml · Extrait de parfum' }),
 ];
 
 export const PRODUCTS: Product[] = [...SETS, ...PERFUMES, ...INSPIRED];

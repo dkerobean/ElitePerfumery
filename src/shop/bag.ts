@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { BRAND, money } from '../config';
 import { deliveryLines, zoneOf, type Delivery } from '../lib/order';
 import { PRODUCTS, type Product } from './products';
@@ -9,16 +9,22 @@ const KEY = 'ep-bag-v1';
 
 /** Bag state, remembered on this phone between visits (best-effort). */
 export function useBag() {
-  const [bag, setBag] = useState<Bag>(() => {
+  // Starts empty (matches the pre-rendered page), then loads the saved bag.
+  const [bag, setBag] = useState<Bag>({});
+  const loaded = useRef(false);
+  useEffect(() => {
     try {
       const raw = JSON.parse(localStorage.getItem(KEY) || '{}') as Bag;
       // drop anything no longer in the catalogue
-      return Object.fromEntries(Object.entries(raw).filter(([id, q]) => q > 0 && PRODUCTS.some((p) => p.id === id)));
+      const saved = Object.fromEntries(Object.entries(raw).filter(([id, q]) => q > 0 && PRODUCTS.some((p) => p.id === id)));
+      if (Object.keys(saved).length) setBag(saved);
     } catch {
-      return {};
+      /* private mode etc. */
     }
-  });
+    loaded.current = true;
+  }, []);
   useEffect(() => {
+    if (!loaded.current) return;
     try {
       localStorage.setItem(KEY, JSON.stringify(bag));
     } catch {

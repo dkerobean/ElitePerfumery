@@ -24,6 +24,16 @@ export const OFFER = {
 export const CURRENCY = 'GH₵';
 export const money = (n: number) => `${CURRENCY}${n.toLocaleString('en-GH')}`;
 
+/**
+ * srcset for a /img/…/name.webp photo, using the -240 / -480 copies made by
+ * `python3 scripts/optimize-images.py`. Phones then download only the size they show.
+ */
+export function srcSet(src: string, fullWidth = 720) {
+  if (!src.endsWith('.webp')) return undefined;
+  const b = src.slice(0, -5);
+  return `${b}-240.webp 240w, ${b}-480.webp 480w, ${src} ${fullWidth}w`;
+}
+
 export interface Item {
   id: string;
   no: string;

@@ -13,10 +13,10 @@ export function Countdown({ tone = 'dark' }: { tone?: 'dark' | 'light' }) {
     [t.s, 'Sec'],
   ];
   return (
-    <div className={`countdown ${tone}`} role="timer" aria-label={`Offer ends in ${t.d} days ${t.h} hours`}>
+    <div className={`countdown ${tone}`} role="timer" aria-label={t.ready ? `Offer ends in ${t.d} days ${t.h} hours` : OFFER.endsLabel}>
       {cells.map(([n, l]) => (
         <div className="cd-cell" key={l}>
-          <span className="cd-num">{pad(n)}</span>
+          <span className="cd-num">{t.ready ? pad(n) : '--'}</span>
           <span className="cd-lbl">{l}</span>
         </div>
       ))}

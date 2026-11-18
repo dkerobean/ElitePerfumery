@@ -13,6 +13,10 @@ export default defineConfig({
         shop: resolve(__dirname, 'shop/index.html'),
         catalog: resolve(__dirname, 'catalog/index.html'), // /catalog → redirects to /shop/
       },
+      output: {
+        // React in its own long-cached file; our code (which changes often) stays separate.
+        manualChunks: (id) => (id.includes('node_modules') ? 'react' : undefined),
+      },
     },
   },
 });

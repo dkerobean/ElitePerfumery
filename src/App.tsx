@@ -1,12 +1,12 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { OFFER, money } from './config';
 import { Announce, Nav } from './components/Chrome';
-import { useOnScreen, useRevealOnScroll } from './lib/hooks';
+import { useOnScreen, useOrderRef, useRevealOnScroll } from './lib/hooks';
 import {
   EMPTY_ORDER,
   QUICK_MESSAGE,
   isComplete,
-  makeRef,
+
   openWhatsApp,
   orderMessage,
   summarize,
@@ -23,7 +23,7 @@ import { ArrowRight, WhatsAppIcon } from './components/Icons';
 export default function App() {
   const [order, setOrderState] = useState<Order>(EMPTY_ORDER);
   const [step, setStep] = useState(0);
-  const orderRef = useMemo(makeRef, []);
+  const orderRef = useOrderRef();
   const setOrder = useCallback((fn: (o: Order) => Order) => setOrderState(fn), []);
   useRevealOnScroll();
 

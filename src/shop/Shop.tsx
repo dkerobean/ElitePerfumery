@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BRAND, OFFER, money, type ForId } from '../config';
-import { useRevealOnScroll } from '../lib/hooks';
+import { BRAND, OFFER, money, srcSet, type ForId } from '../config';
+import { useOrderRef, useRevealOnScroll } from '../lib/hooks';
 import {
   EMPTY_DELIVERY,
   isComplete,
-  makeRef,
+
   openWhatsApp,
   track,
   validate,
@@ -63,6 +63,8 @@ function Media({ p, size = 'card' }: { p: Product; size?: 'card' | 'sheet' }) {
     <img
       className={isPhoto(p) ? 'is-photo' : undefined}
       src={p.img}
+      srcSet={srcSet(p.img)}
+      sizes={size === 'card' ? '(min-width: 1100px) 280px, (min-width: 700px) 32vw, 50vw' : '(min-width: 700px) 520px, 100vw'}
       alt={`${p.line && p.category === 'perfume' ? p.line + ' ' : ''}${p.name}`}
       width={720}
       height={720}
@@ -213,7 +215,7 @@ export function Shop() {
                 Build your box <ArrowRight size={16} />
               </span>
             </div>
-            <img src="/img/combo-set.webp" alt="The 8 items in the Black Friday Combo Box" width={900} height={743} />
+            <img src="/img/combo-set.webp" srcSet={srcSet('/img/combo-set.webp', 900)} sizes="(min-width: 900px) 420px, 90vw" decoding="async" alt="The 8 items in the Black Friday Combo Box" width={900} height={743} />
           </a>
         </section>
 
@@ -426,7 +428,7 @@ function BagDrawer({
   const [stage, setStage] = useState<'bag' | 'checkout' | 'sent'>('bag');
   const [d, setD] = useState<Delivery>(EMPTY_DELIVERY);
   const [showErrors, setShowErrors] = useState(false);
-  const ref = useMemo(makeRef, []);
+  const ref = useOrderRef();
   const s = bagSummary(bag, d);
   const errors = validate(d);
   const ready = isComplete(d) && s.count > 0;

@@ -32,7 +32,7 @@
   --wa-deep: #17834a;
 
   --serif: 'Cormorant Garamond', 'Times New Roman', serif;
-  --sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --sans: 'Manrope Variable', 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   --r-sm: 10px;
   --r: 16px;
@@ -1676,12 +1676,15 @@ fieldset.zone-set:focus {
 
 /* ---------- Reveal ---------- */
 [data-reveal] {
-  opacity: 0;
-  transform: translateY(22px);
   transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
   transition-delay: var(--d, 0ms);
 }
-[data-reveal].is-in {
+/* only hidden once JS is running (html.rv), so pre-rendered content is never invisible */
+.rv [data-reveal] {
+  opacity: 0;
+  transform: translateY(22px);
+}
+.rv [data-reveal].is-in {
   opacity: 1;
   transform: none;
 }
@@ -1881,7 +1884,8 @@ fieldset.zone-set:focus {
   .eyebrow .dot {
     animation: none;
   }
-  [data-reveal] {
+  [data-reveal],
+  .rv [data-reveal] {
     opacity: 1;
     transform: none;
     transition: none;

@@ -1,15 +1,22 @@
 import { useEffect, useRef, useState } from 'react';
+import { makeRef } from './order';
 
+/**
+ * Time-dependent and random values start empty and are filled in right after the
+ * page loads, so the pre-rendered HTML and the first browser render match.
+ */
 export function useCountdown(target: string) {
   const end = new Date(target).getTime();
-  const [now, setNow] = useState(() => Date.now());
+  const [now, setNow] = useState<number | null>(null);
   useEffect(() => {
+    setNow(Date.now());
     const id = window.setInterval(() => setNow(Date.now()), 1000);
     return () => window.clearInterval(id);
   }, []);
-  const ms = Math.max(0, end - now);
+  const ms = now === null ? 0 : Math.max(0, end - now);
   return {
-    done: ms === 0,
+    ready: now !== null,
+    done: now !== null && ms === 0,
     d: Math.floor(ms / 86_400_000),
     h: Math.floor(ms / 3_600_000) % 24,
     m: Math.floor(ms / 60_000) % 60,
@@ -17,14 +24,36 @@ export function useCountdown(target: string) {
   };
 }
 
-/** Adds `.is-in` to every [data-reveal] element as it scrolls into view. */
+/** A random order reference (EP-####), created once the page has loaded. */
+export function useOrderRef() {
+  const [ref, setRef] = useState('');
+  useEffect(() => {
+    setRef(makeRef());
+  }, []);
+  return ref;
+}
+
+/**
+ * Adds `.is-in` to every [data-reveal] element as it scrolls into view.
+ * Nothing is hidden until this runs (html.rv), so the pre-rendered page is fully
+ * visible even before the JavaScript arrives.
+ */
 export function useRevealOnScroll() {
   useEffect(() => {
-    const els = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'));
+    const vh = window.innerHeight;
+    const els = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]')).filter((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < vh && r.bottom > 0) {
+        el.classList.add('is-in'); // already on screen: keep it visible, no flash
+        return false;
+      }
+      return true;
+    });
     if (!('IntersectionObserver' in window)) {
       els.forEach((el) => el.classList.add('is-in'));
       return;
     }
+    document.documentElement.classList.add('rv');
     const io = new IntersectionObserver(
       (entries) =>
         entries.forEach((e) => {
