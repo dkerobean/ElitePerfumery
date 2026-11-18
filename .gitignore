@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+.claude
+tsconfig.tsbuildinfo
+*.local
+
+# Ignore raw unoptimized source images (optimized assets live under public/img/)
+/*.png
+/*.jpg
+/*.jpeg
+/perfumes/
