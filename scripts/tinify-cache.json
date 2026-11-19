@@ -1,0 +1,584 @@
+{
+ "public/img/apple-touch-icon.png": {
+  "src": "0992c14d1f0b98b3",
+  "out": "41e5b9d81626a3b8",
+  "tiny": true,
+  "bytes": 3615
+ },
+ "public/img/combo-set-240.webp": {
+  "src": "549188dee3773776:240",
+  "out": "b483307ea2590052",
+  "tiny": true,
+  "bytes": 16322
+ },
+ "public/img/combo-set-480.webp": {
+  "src": "549188dee3773776:480",
+  "out": "feaf58a5613501d4",
+  "tiny": true,
+  "bytes": 44982
+ },
+ "public/img/combo-set.webp": {
+  "src": "034c8deda27da97a",
+  "out": "549188dee3773776",
+  "tiny": true,
+  "bytes": 117608
+ },
+ "public/img/icon-192.png": {
+  "src": "bfeca2624d297b26",
+  "out": "e3bb34159f889915",
+  "tiny": true,
+  "bytes": 3289
+ },
+ "public/img/liquid-soap-240.webp": {
+  "src": "2e23f9f8f9bec76d:240",
+  "out": "b7018079f1459972",
+  "tiny": true,
+  "bytes": 8786
+ },
+ "public/img/liquid-soap-480.webp": {
+  "src": "2e23f9f8f9bec76d:480",
+  "out": "596eaeadf449effb",
+  "tiny": true,
+  "bytes": 25690
+ },
+ "public/img/liquid-soap.webp": {
+  "src": "fc24c61ca7815005",
+  "out": "2e23f9f8f9bec76d",
+  "tiny": true,
+  "bytes": 46356
+ },
+ "public/img/mark-dark.webp": {
+  "src": "98bde928d5e618b0:72",
+  "out": "4f12ddd18a065542",
+  "tiny": true,
+  "bytes": 3810
+ },
+ "public/img/mark-light.webp": {
+  "src": "8d91e836addd7d1f:240",
+  "out": "572963b5de26f146",
+  "tiny": true,
+  "bytes": 15730
+ },
+ "public/img/og-flyer.jpg": {
+  "src": "4f312f51128411a3",
+  "out": "86e902fe23aca4c0",
+  "tiny": true,
+  "bytes": 127570
+ },
+ "public/img/perfume-240.webp": {
+  "src": "cc750a3ecc53dd4b:240",
+  "out": "4e74eb2770ab8b38",
+  "tiny": true,
+  "bytes": 10160
+ },
+ "public/img/perfume-480.webp": {
+  "src": "cc750a3ecc53dd4b:480",
+  "out": "1d43387a0c9e2b7e",
+  "tiny": true,
+  "bytes": 27940
+ },
+ "public/img/perfume.webp": {
+  "src": "9d1040a3d0d03af8",
+  "out": "cc750a3ecc53dd4b",
+  "tiny": true,
+  "bytes": 50828
+ },
+ "public/img/products/afnan-9pm-rebel-240.webp": {
+  "src": "3c5bd05eb0c27c76:240",
+  "out": "0143f7f51f294730",
+  "tiny": true,
+  "bytes": 8610
+ },
+ "public/img/products/afnan-9pm-rebel-480.webp": {
+  "src": "3c5bd05eb0c27c76:480",
+  "out": "495ad76a82b8c413",
+  "tiny": true,
+  "bytes": 23192
+ },
+ "public/img/products/afnan-9pm-rebel.webp": {
+  "src": "01c778af6e3cf772",
+  "out": "3c5bd05eb0c27c76",
+  "tiny": true,
+  "bytes": 47870
+ },
+ "public/img/products/armaf-club-de-nuit-intense-240.webp": {
+  "src": "9467629bc88e9271:240",
+  "out": "3488627594a08117",
+  "tiny": true,
+  "bytes": 3730
+ },
+ "public/img/products/armaf-club-de-nuit-intense-480.webp": {
+  "src": "9467629bc88e9271:480",
+  "out": "77afcde920692fe4",
+  "tiny": true,
+  "bytes": 9638
+ },
+ "public/img/products/armaf-club-de-nuit-intense.webp": {
+  "src": "567e08c186786f5d",
+  "out": "9467629bc88e9271",
+  "tiny": true,
+  "bytes": 19494
+ },
+ "public/img/products/armaf-infinity-240.webp": {
+  "src": "d15e7e82c57bed26:240",
+  "out": "11487f1dacd95632",
+  "tiny": true,
+  "bytes": 9116
+ },
+ "public/img/products/armaf-infinity-480.webp": {
+  "src": "d15e7e82c57bed26:480",
+  "out": "d3d5c5413b81df29",
+  "tiny": true,
+  "bytes": 19492
+ },
+ "public/img/products/armaf-infinity.webp": {
+  "src": "533b1674e33db1a2",
+  "out": "d15e7e82c57bed26",
+  "tiny": true,
+  "bytes": 19870
+ },
+ "public/img/products/atlantis-extrait-240.webp": {
+  "src": "0d93c03555109578:240",
+  "out": "b9c027f3e5a89bb2",
+  "tiny": true,
+  "bytes": 7030
+ },
+ "public/img/products/atlantis-extrait-480.webp": {
+  "src": "0d93c03555109578:480",
+  "out": "0d3cc4d48656ba88",
+  "tiny": true,
+  "bytes": 21286
+ },
+ "public/img/products/atlantis-extrait.webp": {
+  "src": "73f6f3d2abe18d2c",
+  "out": "0d93c03555109578",
+  "tiny": true,
+  "bytes": 51952
+ },
+ "public/img/products/french-avenue-aether-240.webp": {
+  "src": "9517d47d7f709bfd:240",
+  "out": "9476745a6bdd5098",
+  "tiny": true,
+  "bytes": 3482
+ },
+ "public/img/products/french-avenue-aether-480.webp": {
+  "src": "9517d47d7f709bfd:480",
+  "out": "d77619d9bb3b0c7b",
+  "tiny": true,
+  "bytes": 10656
+ },
+ "public/img/products/french-avenue-aether.webp": {
+  "src": "392a9814ed78ba83",
+  "out": "9517d47d7f709bfd",
+  "tiny": true,
+  "bytes": 22724
+ },
+ "public/img/products/french-avenue-liquid-brun-240.webp": {
+  "src": "71ccf3d4470d41ad:240",
+  "out": "9cffa87bcc9775b2",
+  "tiny": true,
+  "bytes": 8202
+ },
+ "public/img/products/french-avenue-liquid-brun-480.webp": {
+  "src": "71ccf3d4470d41ad:480",
+  "out": "839c6c1a1ab4ac47",
+  "tiny": true,
+  "bytes": 22038
+ },
+ "public/img/products/french-avenue-liquid-brun.webp": {
+  "src": "0fa3d1b6fd6de550",
+  "out": "71ccf3d4470d41ad",
+  "tiny": true,
+  "bytes": 44918
+ },
+ "public/img/products/inspired-ares-240.webp": {
+  "src": "a879f6f723247fee:240",
+  "out": "d6e825ea0f4885bd",
+  "tiny": true,
+  "bytes": 3714
+ },
+ "public/img/products/inspired-ares-480.webp": {
+  "src": "a879f6f723247fee:480",
+  "out": "d71d93f0e9093b8b",
+  "tiny": true,
+  "bytes": 9604
+ },
+ "public/img/products/inspired-ares.webp": {
+  "src": "9a09a261b9326782:1.0:800",
+  "out": "a879f6f723247fee",
+  "tiny": true,
+  "bytes": 19170
+ },
+ "public/img/products/inspired-badboy-240.webp": {
+  "src": "b7519c280416c46d:240",
+  "out": "cfaec3f1b7455757",
+  "tiny": true,
+  "bytes": 3908
+ },
+ "public/img/products/inspired-badboy-480.webp": {
+  "src": "b7519c280416c46d:480",
+  "out": "1a166dd5fe94fcb0",
+  "tiny": true,
+  "bytes": 10266
+ },
+ "public/img/products/inspired-badboy.webp": {
+  "src": "b4ca9f52e7264f28:1.0:800",
+  "out": "b7519c280416c46d",
+  "tiny": true,
+  "bytes": 20330
+ },
+ "public/img/products/inspired-champion-240.webp": {
+  "src": "68349933b4763a92:240",
+  "out": "4d14611d128ab237",
+  "tiny": true,
+  "bytes": 8454
+ },
+ "public/img/products/inspired-champion-480.webp": {
+  "src": "68349933b4763a92:480",
+  "out": "e9adf15f84fd1299",
+  "tiny": true,
+  "bytes": 23982
+ },
+ "public/img/products/inspired-champion.webp": {
+  "src": "15903cd7635a104d:0.62:800",
+  "out": "68349933b4763a92",
+  "tiny": true,
+  "bytes": 53852
+ },
+ "public/img/products/inspired-nomade-240.webp": {
+  "src": "53e58bb7fdb85604:240",
+  "out": "097341aa9ebc3b4f",
+  "tiny": true,
+  "bytes": 5032
+ },
+ "public/img/products/inspired-nomade-480.webp": {
+  "src": "53e58bb7fdb85604:480",
+  "out": "240a53359a565225",
+  "tiny": true,
+  "bytes": 11872
+ },
+ "public/img/products/inspired-nomade.webp": {
+  "src": "7cb9823653affbce:0.95:800",
+  "out": "53e58bb7fdb85604",
+  "tiny": true,
+  "bytes": 20692
+ },
+ "public/img/products/inspired-spicebomb-240.webp": {
+  "src": "6dfa4e4af47e96ca:240",
+  "out": "733267cd45bb8173",
+  "tiny": true,
+  "bytes": 3944
+ },
+ "public/img/products/inspired-spicebomb-480.webp": {
+  "src": "6dfa4e4af47e96ca:480",
+  "out": "692e4d6c17f0b3cc",
+  "tiny": true,
+  "bytes": 10486
+ },
+ "public/img/products/inspired-spicebomb.webp": {
+  "src": "db7c592bda632645:1.0:800",
+  "out": "6dfa4e4af47e96ca",
+  "tiny": true,
+  "bytes": 20648
+ },
+ "public/img/products/inspired-stronger-240.webp": {
+  "src": "07fa25f085c5e32d:240",
+  "out": "7d31c93ac9e7a78a",
+  "tiny": true,
+  "bytes": 4376
+ },
+ "public/img/products/inspired-stronger-480.webp": {
+  "src": "07fa25f085c5e32d:480",
+  "out": "802f44d20ce1b83f",
+  "tiny": true,
+  "bytes": 12504
+ },
+ "public/img/products/inspired-stronger-intensely-240.webp": {
+  "src": "96940a2f9c5e5637:240",
+  "out": "b7e8be3fbe8a39ae",
+  "tiny": true,
+  "bytes": 4118
+ },
+ "public/img/products/inspired-stronger-intensely-480.webp": {
+  "src": "96940a2f9c5e5637:480",
+  "out": "2b7bb498db4fe101",
+  "tiny": true,
+  "bytes": 11008
+ },
+ "public/img/products/inspired-stronger-intensely.webp": {
+  "src": "dd0fca65588c993f:1.0:800",
+  "out": "96940a2f9c5e5637",
+  "tiny": true,
+  "bytes": 21688
+ },
+ "public/img/products/inspired-stronger.webp": {
+  "src": "8fda974692db9005:0.8:800",
+  "out": "07fa25f085c5e32d",
+  "tiny": true,
+  "bytes": 27352
+ },
+ "public/img/products/inspired-texas-240.webp": {
+  "src": "3f7cd26d0241ed17:240",
+  "out": "ef5c01662415b4d0",
+  "tiny": true,
+  "bytes": 3772
+ },
+ "public/img/products/inspired-texas-480.webp": {
+  "src": "3f7cd26d0241ed17:480",
+  "out": "6a8828fa38685149",
+  "tiny": true,
+  "bytes": 9768
+ },
+ "public/img/products/inspired-texas.webp": {
+  "src": "97008f5058b9ccf1:1.0:800",
+  "out": "3f7cd26d0241ed17",
+  "tiny": true,
+  "bytes": 19394
+ },
+ "public/img/products/lattafa-art-of-universe-240.webp": {
+  "src": "d94103ca9854b1d6:240",
+  "out": "2d45aa391088ec7e",
+  "tiny": true,
+  "bytes": 8312
+ },
+ "public/img/products/lattafa-art-of-universe-480.webp": {
+  "src": "d94103ca9854b1d6:480",
+  "out": "d2757391034f45ce",
+  "tiny": true,
+  "bytes": 20752
+ },
+ "public/img/products/lattafa-art-of-universe.webp": {
+  "src": "59c9cc44bb1940a2",
+  "out": "d94103ca9854b1d6",
+  "tiny": true,
+  "bytes": 21294
+ },
+ "public/img/products/lattafa-fakhar-240.webp": {
+  "src": "4ff1df3222c85651:240",
+  "out": "29172bbbfd62777d",
+  "tiny": true,
+  "bytes": 11722
+ },
+ "public/img/products/lattafa-fakhar-480.webp": {
+  "src": "4ff1df3222c85651:480",
+  "out": "eaa0acf6a54b0a44",
+  "tiny": true,
+  "bytes": 36788
+ },
+ "public/img/products/lattafa-fakhar.webp": {
+  "src": "31c3e3de2fbff625",
+  "out": "4ff1df3222c85651",
+  "tiny": true,
+  "bytes": 83276
+ },
+ "public/img/products/lattafa-khamrah-waha-240.webp": {
+  "src": "ffda2563fbe3e2fe:240",
+  "out": "e3ed2e151c397e9c",
+  "tiny": true,
+  "bytes": 4328
+ },
+ "public/img/products/lattafa-khamrah-waha-480.webp": {
+  "src": "ffda2563fbe3e2fe:480",
+  "out": "5836efab71558a4e",
+  "tiny": true,
+  "bytes": 12806
+ },
+ "public/img/products/lattafa-khamrah-waha.webp": {
+  "src": "7314405bc081c79f",
+  "out": "ffda2563fbe3e2fe",
+  "tiny": true,
+  "bytes": 30624
+ },
+ "public/img/products/lattafa-vintage-radio-240.webp": {
+  "src": "0ea47b2684593824:240",
+  "out": "6fd621ab0c6bc87b",
+  "tiny": true,
+  "bytes": 6290
+ },
+ "public/img/products/lattafa-vintage-radio-480.webp": {
+  "src": "0ea47b2684593824:480",
+  "out": "59b43ef537fbcad9",
+  "tiny": true,
+  "bytes": 15030
+ },
+ "public/img/products/lattafa-vintage-radio.webp": {
+  "src": "d37e452c60f84ca5",
+  "out": "0ea47b2684593824",
+  "tiny": true,
+  "bytes": 29152
+ },
+ "public/img/products/riiffs-freeze-240.webp": {
+  "src": "e7e46f519e677745:240",
+  "out": "800048c79eaa4912",
+  "tiny": true,
+  "bytes": 10622
+ },
+ "public/img/products/riiffs-freeze-480.webp": {
+  "src": "e7e46f519e677745:480",
+  "out": "fdd442839a6eccf9",
+  "tiny": true,
+  "bytes": 29910
+ },
+ "public/img/products/riiffs-freeze.webp": {
+  "src": "deeedccb8780f8aa",
+  "out": "e7e46f519e677745",
+  "tiny": true,
+  "bytes": 45052
+ },
+ "public/img/products/riiffs-momento-240.webp": {
+  "src": "ee7792ea942b708b:240",
+  "out": "914e5ec0990c0266",
+  "tiny": true,
+  "bytes": 6194
+ },
+ "public/img/products/riiffs-momento-480.webp": {
+  "src": "ee7792ea942b708b:480",
+  "out": "84dc0e90cb8b55aa",
+  "tiny": true,
+  "bytes": 18008
+ },
+ "public/img/products/riiffs-momento.webp": {
+  "src": "fc9736cd3f93b3bb",
+  "out": "ee7792ea942b708b",
+  "tiny": true,
+  "bytes": 36892
+ },
+ "public/img/products/riiffs-prive-gold-240.webp": {
+  "src": "3ff3345f74ac7834:240",
+  "out": "2b07366c91858cf8",
+  "tiny": true,
+  "bytes": 7302
+ },
+ "public/img/products/riiffs-prive-gold-480.webp": {
+  "src": "3ff3345f74ac7834:480",
+  "out": "afa024af5915024c",
+  "tiny": true,
+  "bytes": 18784
+ },
+ "public/img/products/riiffs-prive-gold.webp": {
+  "src": "e864a5b413b2542a",
+  "out": "3ff3345f74ac7834",
+  "tiny": true,
+  "bytes": 43194
+ },
+ "public/img/shampoo-240.webp": {
+  "src": "78cff39e64782f57:240",
+  "out": "f6377bdafaf884c5",
+  "tiny": true,
+  "bytes": 8598
+ },
+ "public/img/shampoo-480.webp": {
+  "src": "78cff39e64782f57:480",
+  "out": "4ffcbe2b0d0e7c14",
+  "tiny": true,
+  "bytes": 23802
+ },
+ "public/img/shampoo.webp": {
+  "src": "7a53f55ca3c3986d",
+  "out": "78cff39e64782f57",
+  "tiny": true,
+  "bytes": 43100
+ },
+ "public/img/shower-gel-240.webp": {
+  "src": "120ba7ec7ba5a114:240",
+  "out": "f4a11ef21d0580b0",
+  "tiny": true,
+  "bytes": 7598
+ },
+ "public/img/shower-gel-480.webp": {
+  "src": "120ba7ec7ba5a114:480",
+  "out": "e1ee3bf9a3b9e830",
+  "tiny": true,
+  "bytes": 19614
+ },
+ "public/img/shower-gel.webp": {
+  "src": "bdd0faccf247e99e",
+  "out": "120ba7ec7ba5a114",
+  "tiny": true,
+  "bytes": 33106
+ },
+ "public/img/soap-240.webp": {
+  "src": "cca96435f7a72d39:240",
+  "out": "8ec099a4ea439417",
+  "tiny": true,
+  "bytes": 9534
+ },
+ "public/img/soap-480.webp": {
+  "src": "cca96435f7a72d39:480",
+  "out": "b02468d15e97ce6e",
+  "tiny": true,
+  "bytes": 25916
+ },
+ "public/img/soap.webp": {
+  "src": "baf74f07755f4357",
+  "out": "cca96435f7a72d39",
+  "tiny": true,
+  "bytes": 49292
+ },
+ "public/img/toothbrushes-240.webp": {
+  "src": "09b41b20f033fb15:240",
+  "out": "8a754fdf0b68375d",
+  "tiny": true,
+  "bytes": 9400
+ },
+ "public/img/toothbrushes-480.webp": {
+  "src": "09b41b20f033fb15:480",
+  "out": "c327d969c22e6607",
+  "tiny": true,
+  "bytes": 26284
+ },
+ "public/img/toothbrushes.webp": {
+  "src": "72e6ba07b10f0dac",
+  "out": "09b41b20f033fb15",
+  "tiny": true,
+  "bytes": 50656
+ },
+ "public/img/toothpaste-240.webp": {
+  "src": "9e03ed0e5ed0fe3e:240",
+  "out": "d1888877ca61b76c",
+  "tiny": true,
+  "bytes": 8046
+ },
+ "public/img/toothpaste-480.webp": {
+  "src": "9e03ed0e5ed0fe3e:480",
+  "out": "535ce9d70e4a2231",
+  "tiny": true,
+  "bytes": 22030
+ },
+ "public/img/toothpaste.webp": {
+  "src": "ccc65122994475d0",
+  "out": "9e03ed0e5ed0fe3e",
+  "tiny": true,
+  "bytes": 40514
+ },
+ "public/img/towel-240.webp": {
+  "src": "fcc2db80beeac21d:240",
+  "out": "e07b9f79f2b61c7a",
+  "tiny": true,
+  "bytes": 8686
+ },
+ "public/img/towel-480.webp": {
+  "src": "fcc2db80beeac21d:480",
+  "out": "0a4675a27f94a9fa",
+  "tiny": true,
+  "bytes": 27936
+ },
+ "public/img/towel.webp": {
+  "src": "9972490a0485dba5",
+  "out": "fcc2db80beeac21d",
+  "tiny": true,
+  "bytes": 51416
+ },
+ "public/img/wordmark-dark.webp": {
+  "src": "5cf8b2f7f27e5ce2:210",
+  "out": "6e4d33a488e5c869",
+  "tiny": true,
+  "bytes": 5732
+ },
+ "public/img/wordmark-light.webp": {
+  "src": "bb60282b39d43ebc:390",
+  "out": "8244c9cd3ae2153c",
+  "tiny": true,
+  "bytes": 10066
+ }
+}
