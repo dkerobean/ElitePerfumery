@@ -26,8 +26,8 @@ export function Nav({
     <header className="nav">
       <div className="wrap nav-inner">
         <a href={homeHref} className="nav-logo" aria-label={`${BRAND.name} home`}>
-          <img src="/img/mark-dark.webp" alt="" width={24} height={32} />
-          <img src="/img/wordmark-dark.webp" alt={BRAND.name} width={70} height={48} className="nav-word" />
+          <img src="/img/mark-dark.webp?v=2" alt="" width={24} height={32} />
+          <img src="/img/wordmark-dark.webp?v=2" alt={BRAND.name} width={70} height={48} className="nav-word" />
         </a>
         <nav className="nav-links" aria-label="Main">
           {links.map((l) => (

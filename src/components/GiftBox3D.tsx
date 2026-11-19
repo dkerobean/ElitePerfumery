@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { ITEMS, srcSet } from '../config';
+import { ITEMS, imgUrl, srcSet } from '../config';
 
 /**
  * Pure-CSS 3D gift box. No WebGL, no libraries — light enough for
@@ -51,22 +51,22 @@ export function GiftBox3D({ paused }: { paused: boolean }) {
               className="orbit"
               style={{ '--a': `${(360 / ORBIT.length) * i}deg`, '--y': `${LIFT[i]}px` } as React.CSSProperties}
             >
-              <img src={it.img} srcSet={srcSet(it.img)} sizes="120px" alt="" width={120} height={120} decoding="async" />
+              <img src={imgUrl(it.img)} srcSet={srcSet(it.img)} sizes="120px" alt="" width={120} height={120} decoding="async" />
             </div>
           ))}
         </div>
 
         <div className="hero-bottle">
-          <img src={perfume.img} srcSet={srcSet(perfume.img)} sizes="(min-width: 900px) 200px, 140px" alt="" width={200} height={200} fetchPriority="high" />
+          <img src={imgUrl(perfume.img)} srcSet={srcSet(perfume.img)} sizes="(min-width: 900px) 200px, 140px" alt="" width={200} height={200} fetchPriority="high" />
         </div>
 
         <div className="box">
           <div className="face f-front">
-            <img className="face-mark" src="/img/mark-light.webp" alt="" width={61} height={80} />
+            <img className="face-mark" src="/img/mark-light.webp?v=2" alt="" width={61} height={80} />
             <span className="face-word">ELITE</span>
           </div>
           <div className="face f-back">
-            <img className="face-mark" src="/img/mark-light.webp" alt="" width={61} height={80} />
+            <img className="face-mark" src="/img/mark-light.webp?v=2" alt="" width={61} height={80} />
             <span className="face-word">PERFUMERY</span>
           </div>
           <div className="face f-left ribbon-v" />

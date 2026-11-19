@@ -1,4 +1,4 @@
-import { ITEMS, OFFER, money, srcSet } from '../config';
+import { ITEMS, OFFER, imgUrl, money, srcSet } from '../config';
 import { ArrowRight } from './Icons';
 
 export function Marquee() {
@@ -39,7 +39,7 @@ export function Inside({ onBuild }: { onBuild: () => void }) {
         <article className="feature" data-reveal>
           <div className="feature-media">
             <span className="feature-no">{hero.no}</span>
-            <img src={hero.img} srcSet={srcSet(hero.img)} sizes="(min-width: 900px) 420px, 80vw" alt="Gloria Perfume Wanted No. 279, 55ml eau de parfum box" width={720} height={720} loading="lazy" />
+            <img src={imgUrl(hero.img)} srcSet={srcSet(hero.img)} sizes="(min-width: 900px) 420px, 80vw" alt="Gloria Perfume Wanted No. 279, 55ml eau de parfum box" width={720} height={720} loading="lazy" />
           </div>
           <div className="feature-body">
             <p className="eyebrow">The centrepiece</p>
@@ -61,7 +61,7 @@ export function Inside({ onBuild }: { onBuild: () => void }) {
             <li className="item" key={it.id} data-reveal style={{ '--d': `${(i % 2) * 80}ms` } as React.CSSProperties}>
               <div className="item-media">
                 <span className="item-no">{it.no}</span>
-                <img src={it.img} srcSet={srcSet(it.img)} sizes="(min-width: 900px) 240px, 46vw" alt={it.name} width={720} height={720} loading="lazy" decoding="async" />
+                <img src={imgUrl(it.img)} srcSet={srcSet(it.img)} sizes="(min-width: 900px) 240px, 46vw" alt={it.name} width={720} height={720} loading="lazy" decoding="async" />
               </div>
               <h3 className="item-name">{it.name}</h3>
               <p className="item-detail">{it.detail}</p>

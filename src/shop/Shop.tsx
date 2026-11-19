@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { BRAND, OFFER, money, srcSet, type ForId } from '../config';
+import { BRAND, OFFER, imgUrl, money, srcSet, type ForId } from '../config';
 import { useOrderRef, useRevealOnScroll } from '../lib/hooks';
 import {
   EMPTY_DELIVERY,
@@ -62,7 +62,7 @@ function Media({ p, size = 'card' }: { p: Product; size?: 'card' | 'sheet' }) {
   return p.img ? (
     <img
       className={isPhoto(p) ? 'is-photo' : undefined}
-      src={p.img}
+      src={imgUrl(p.img)}
       srcSet={srcSet(p.img)}
       sizes={size === 'card' ? '(min-width: 1100px) 280px, (min-width: 700px) 32vw, 50vw' : '(min-width: 700px) 520px, 100vw'}
       alt={`${p.line && p.category === 'perfume' ? p.line + ' ' : ''}${p.name}`}
@@ -215,7 +215,7 @@ export function Shop() {
                 Build your box <ArrowRight size={16} />
               </span>
             </div>
-            <img src="/img/combo-set.webp" srcSet={srcSet('/img/combo-set.webp', 900)} sizes="(min-width: 900px) 420px, 90vw" decoding="async" alt="The 8 items in the Black Friday Combo Box" width={900} height={743} />
+            <img src={imgUrl('/img/combo-set.webp')} srcSet={srcSet('/img/combo-set.webp', 900)} sizes="(min-width: 900px) 420px, 90vw" decoding="async" alt="The 8 items in the Black Friday Combo Box" width={900} height={743} />
           </a>
         </section>
 

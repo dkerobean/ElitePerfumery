@@ -91,7 +91,7 @@ export function More() {
     <section className="section more" id="more">
       <div className="wrap more-grid">
         <div className="more-card" data-reveal>
-          <img className="more-mark" src="/img/mark-light.webp" alt="" width={61} height={80} loading="lazy" />
+          <img className="more-mark" src="/img/mark-light.webp?v=2" alt="" width={61} height={80} loading="lazy" />
           <p className="eyebrow light">Beyond Black Friday</p>
           <h2 className="sec-title light">
             The full <em>Elite</em> collection
@@ -162,7 +162,7 @@ export function FinalCta({ onBuild }: { onBuild: () => void }) {
   return (
     <section className="final">
       <div className="wrap final-inner" data-reveal>
-        <img src="/img/mark-light.webp" alt="" width={46} height={60} loading="lazy" />
+        <img src="/img/mark-light.webp?v=2" alt="" width={46} height={60} loading="lazy" />
         <h2 className="final-title">
           Your box is <em>one message</em> away.
         </h2>
@@ -182,7 +182,7 @@ export function Footer() {
   return (
     <footer className="footer">
       <div className="wrap footer-inner">
-        <img src="/img/wordmark-light.webp" alt={BRAND.name} width={130} height={88} loading="lazy" />
+        <img src="/img/wordmark-light.webp?v=2" alt={BRAND.name} width={130} height={88} loading="lazy" />
         <div className="footer-links">
           <a href={`https://wa.me/${BRAND.whatsappNumber}`} target="_blank" rel="noopener">
             <WhatsAppIcon size={16} /> {BRAND.whatsappDisplay}
