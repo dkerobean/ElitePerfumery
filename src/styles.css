@@ -493,8 +493,8 @@ p {
   --bw: calc(150 * var(--u));
   --bh: calc(104 * var(--u));
   --lh: calc(30 * var(--u));
-  --r: calc(144 * var(--u));
-  --item: calc(70 * var(--u));
+  --r: calc(150 * var(--u));
+  --item: calc(62 * var(--u));
   --open: 0;
   position: relative;
   width: 100%;
@@ -691,7 +691,7 @@ p {
     rotateY(calc(-1 * var(--spin))) rotateX(16deg);
 }
 .hero-bottle img {
-  width: calc(98 * var(--u));
+  width: calc(88 * var(--u));
   max-width: none;
   transform: translate(-50%, -86%);
   animation: rise 4.5s ease-in-out infinite;
